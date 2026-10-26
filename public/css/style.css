@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #0d0d0d;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.scroll {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.header {
+    position: sticky;
+    top : 0;
+    background-color: #0d0d0d;
+    border: 1px solid #f5f5f5;
+    padding: 15px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    margin: 30px;
+}
+li img {
+    width: 200px;
+    height: 300px;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer {
+    position: sticky;
+    bottom : 0;
+    background-color: #0d0d0d;
+    border: 1px solid #f5f5f5;
+    padding: 15px;
+    text-align: center;
+}
+
+.movie-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie-detail .poster {
+    width: 200px;
+    height: 300px;
+    display: block;
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.title-date {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.title-date .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cast-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 15px;
+}
+
+.cast-list a {
+    display: flex;
+    align-items: stretch;
+    border: 1px solid #f5f5f5;
+}
+
+.cast-list img {
+    width: 70px;
+    height: 100px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.cast-list li {
+    margin: 0;
+    width: 100%;
+}
+
+.cast-list .cast-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.cast-list .role {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+}
+
+.cast-list .actor-name {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.menu {
+    background: black;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+.menu a {
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.menu a:hover {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    body {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    li {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
